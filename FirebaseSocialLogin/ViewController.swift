@@ -7,19 +7,34 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let loginButton = FBSDKLoginButton()
+        
+        view.addSubview(loginButton)
+        loginButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32, height: 50)
+        
+        loginButton.delegate = self
+
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("Aus Facebook ausgeloggt!")
+        
     }
-
-
+    
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        if error != nil {
+            print(error)
+            return
+        }
+        
+        print("Erfolgreich eingeloggt!")
+    }
 }
 
