@@ -20,7 +20,30 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         loginButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32, height: 50)
         
         loginButton.delegate = self
-
+        loginButton.readPermissions = ["email", "public_profile"]
+        
+        let customFBButton = UIButton(type: .system)
+        customFBButton.backgroundColor = .blue
+        customFBButton.frame = CGRect(x: 16, y: 116, width: view.frame.width - 32, height: 50)
+        customFBButton.setTitle("Facebook Login", for: .normal)
+        customFBButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        customFBButton.setTitleColor(.white, for: .normal)
+        view.addSubview(customFBButton)
+        
+        customFBButton.addTarget(self, action: #selector(handleCustomFBLogin), for: .touchUpInside)
+    }
+    
+    func handleCustomFBLogin() {
+        FBSDKLoginManager().logIn(withReadPermissions: ["email", "public_profile"], from: self) {
+             (result, err) in
+            if err != nil {
+                print("Login fehlgeschlagen:", err)
+                return
+            }
+            
+            self.showEmailAddress()
+            
+        }
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
@@ -34,7 +57,22 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             return
         }
         
-        print("Erfolgreich eingeloggt!")
+        showEmailAddress()
+        
+    }
+
+    func showEmailAddress() {
+        FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id, name, email"]).start { (connection, result, err) in
+        
+        if err != nil {
+            print("Failed to start graph request:", err)
+            return
+        }
+        
+        print(result)
+            
+        }
     }
 }
+
 
