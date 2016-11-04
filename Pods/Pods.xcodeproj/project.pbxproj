@@ -131,6 +131,7 @@
 		591FC299A2D9A1B4ED34D81F3A5B3364 /* FBSDKServerConfigurationManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A3AB216E33D9DA74CA8C82FDFF73E055 /* FBSDKServerConfigurationManager+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		59834F5509421BF031C29B9CAFE404F0 /* FBSDKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F33D100BF3CFCC62A7E2E83B221CA8 /* FBSDKColor.m */; };
 		5A40CE0717F4DFAF776F12F835401D72 /* FBSDKShareError.h in Headers */ = {isa = PBXBuildFile; fileRef = 27055A1AE8279A5FE0BCBB9BC523FA48 /* FBSDKShareError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5AAD55F71DCD145B00CD875C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */; };
 		5C5D17AB22A659C7A35FBDB5C8DEC1AE /* FBSDKBridgeAPIProtocolNativeV1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1584394613561A647E63C720FE360F2C /* FBSDKBridgeAPIProtocolNativeV1.m */; };
 		5CA8E916EED0300D905FD4BCC1C336ED /* FBSDKAppEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D26B54915401888D3F1FD4169FAF5A /* FBSDKAppEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DB28EB181DDB2482EAB7052C0FFDD4A /* FBSDKShareKit+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B430977AB96A5AD9B1033B702DBB8A /* FBSDKShareKit+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1675,6 +1676,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAD55F71DCD145B00CD875C /* Podfile in Resources */,
 				91461806305F16B4B68CC47B4FE551C3 /* FacebookSDKStrings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
