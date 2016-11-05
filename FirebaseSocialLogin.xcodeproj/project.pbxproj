@@ -13,6 +13,7 @@
 		5A2F4DCC1DC9102D00911755 /* FirebaseSocialLogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F4DCA1DC9102D00911755 /* FirebaseSocialLogin.xcdatamodeld */; };
 		5A2F4DCE1DC9102D00911755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A2F4DCD1DC9102D00911755 /* Assets.xcassets */; };
 		5A2F4DD11DC9102D00911755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2F4DCF1DC9102D00911755 /* LaunchScreen.storyboard */; };
+		5A34A20B1DCE466100C6119C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A34A20A1DCE466100C6119C /* GoogleService-Info.plist */; };
 		752879D46D8E2C06175CB2AB /* Pods_FirebaseSocialLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8958DA437666F20D11820DFD /* Pods_FirebaseSocialLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		5A2F4DCD1DC9102D00911755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A2F4DD01DC9102D00911755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A2F4DD21DC9102D00911755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A34A20A1DCE466100C6119C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5AFB596D1DC9195000228CBD /* FirebaseSocialLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseSocialLogin.entitlements; sourceTree = "<group>"; };
 		8958DA437666F20D11820DFD /* Pods_FirebaseSocialLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseSocialLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -64,13 +66,14 @@
 		5A2F4DC21DC9102D00911755 /* FirebaseSocialLogin */ = {
 			isa = PBXGroup;
 			children = (
-				5AFB596D1DC9195000228CBD /* FirebaseSocialLogin.entitlements */,
+				5A34A20A1DCE466100C6119C /* GoogleService-Info.plist */,
 				5A2F4DC31DC9102D00911755 /* AppDelegate.swift */,
 				5A2F4DC51DC9102D00911755 /* ViewController.swift */,
 				5A2F4DC71DC9102D00911755 /* Main.storyboard */,
 				5A2F4DCD1DC9102D00911755 /* Assets.xcassets */,
 				5A2F4DCF1DC9102D00911755 /* LaunchScreen.storyboard */,
 				5A2F4DD21DC9102D00911755 /* Info.plist */,
+				5AFB596D1DC9195000228CBD /* FirebaseSocialLogin.entitlements */,
 				5A2F4DCA1DC9102D00911755 /* FirebaseSocialLogin.xcdatamodeld */,
 			);
 			path = FirebaseSocialLogin;
@@ -164,6 +167,7 @@
 				5A2F4DD11DC9102D00911755 /* LaunchScreen.storyboard in Resources */,
 				5A2F4DCE1DC9102D00911755 /* Assets.xcassets in Resources */,
 				5A2F4DC91DC9102D00911755 /* Main.storyboard in Resources */,
+				5A34A20B1DCE466100C6119C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
